@@ -15,15 +15,33 @@ const initialState = {
   currentPage: 1,
   currentLimit: 10,
   errorMsg: '',
+  isLoading: false,
+  isRefreshing: false,
 };
 
 const studentSlice = createSlice({
   name: 'Student',
   initialState,
-  reducers: {},
+  reducers: {
+    changePage(state) {
+      state.currentPage++;
+    },
+    refresh(state) {
+      if (state.currentPage !== 1) {
+        state.isRefreshing = true;
+        state.students = [];
+        state.currentPage = 1;
+      }
+    },
+  },
   extraReducers: builder => {
     builder
+      .addCase(fetchPaginatedStudents.pending, (state, action) => {
+        state.isLoading = true;
+      })
       .addCase(fetchPaginatedStudents.fulfilled, (state, action) => {
+        state.isRefreshing = false;
+        state.isLoading = false;
         state.students.push(...action.payload);
       })
       .addCase(fetchPaginatedStudents.rejected, (state, action) => {
@@ -32,4 +50,5 @@ const studentSlice = createSlice({
   },
 });
 
+export const {changePage, refresh} = studentSlice.actions;
 export default studentSlice.reducer;
