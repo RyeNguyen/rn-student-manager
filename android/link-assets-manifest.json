@@ -1,0 +1,329 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Inconsolata-Black.ttf",
+      "sha1": "529ab2ab8935dfa84fc81fa9f0a6c0d2c2d7294c"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-Bold.ttf",
+      "sha1": "82ff0ef4a72d1414995377a3b30af84381d7b85a"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-ExtraBold.ttf",
+      "sha1": "2ffbe237c65a8ef3c28ec18b72e5a7de5acb48bf"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-ExtraLight.ttf",
+      "sha1": "3b9feef87ba8db5ae2c88a6407df32cfcab6567d"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-Light.ttf",
+      "sha1": "3f39d85ade68cdae3ac451e0832d65f294de8ee5"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-Medium.ttf",
+      "sha1": "5e046cc150d289bfc7b968b8d3da054380e1d4b9"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-Regular.ttf",
+      "sha1": "5236122ed33eacc57aa314cedbb46ff31b1a52a2"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-SemiBold.ttf",
+      "sha1": "2c24a30b33d3183feb6eca8225c50c078f860e60"
+    },
+    {
+      "path": "assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf",
+      "sha1": "0bbda1af9558fd531bcbaffebb69ba89b4dc4eef"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-Black.ttf",
+      "sha1": "529ab2ab8935dfa84fc81fa9f0a6c0d2c2d7294c"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-Bold.ttf",
+      "sha1": "82ff0ef4a72d1414995377a3b30af84381d7b85a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-ExtraBold.ttf",
+      "sha1": "2ffbe237c65a8ef3c28ec18b72e5a7de5acb48bf"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-ExtraLight.ttf",
+      "sha1": "3b9feef87ba8db5ae2c88a6407df32cfcab6567d"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-Light.ttf",
+      "sha1": "3f39d85ade68cdae3ac451e0832d65f294de8ee5"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-Medium.ttf",
+      "sha1": "5e046cc150d289bfc7b968b8d3da054380e1d4b9"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-Regular.ttf",
+      "sha1": "5236122ed33eacc57aa314cedbb46ff31b1a52a2"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata/Inconsolata-SemiBold.ttf",
+      "sha1": "2c24a30b33d3183feb6eca8225c50c078f860e60"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-Black.ttf",
+      "sha1": "7e6f05dede92d07b491a1bd64e52ffb558309ad6"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-Bold.ttf",
+      "sha1": "13267b03cee667681aaf3730686b5d72d417533b"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-ExtraBold.ttf",
+      "sha1": "985dc98e8c29ae1a8440926d52994076cb6768ee"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-ExtraLight.ttf",
+      "sha1": "8833068bbab955360132ce6ecc61a99b536a5d3d"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-Light.ttf",
+      "sha1": "234d869ccb256ceb400b694dfcbd5dbd03134ab9"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-Medium.ttf",
+      "sha1": "3aaf9c0d06dc409863e9a87092cf7c168abce275"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-Regular.ttf",
+      "sha1": "9d463031889df668c71781772df9a7f20b98f1e9"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Condensed/Inconsolata_Condensed-SemiBold.ttf",
+      "sha1": "f86fc74b68860353f09c4d5cbe7366fff7c82ab7"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-Black.ttf",
+      "sha1": "963e64108c66a1820d535d20d36148ab97c2cfcd"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-Bold.ttf",
+      "sha1": "9f4b48c31ccd7fb68a37e2d0d8de731f5ecd2936"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-ExtraBold.ttf",
+      "sha1": "7b8fd27a13e749546c04a2b486696372ff4bad69"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-ExtraLight.ttf",
+      "sha1": "81805ff60439d72c5ccb94241957622aabc7a261"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-Light.ttf",
+      "sha1": "851c6151c0ff1a88cfabcc12e3d5f4a570e8ed6e"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-Medium.ttf",
+      "sha1": "3f67e97f6741f65228c44945fe856db034e394ed"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-Regular.ttf",
+      "sha1": "9db4cf9d761a91d36da903ac9a393f25c4d48e3a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_Expanded/Inconsolata_Expanded-SemiBold.ttf",
+      "sha1": "1b03f34c7de2846d79105aa954b3201733caab1a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-Black.ttf",
+      "sha1": "c27ae8acbd8860ff5f7901ea20ed4e281cdcffab"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-Bold.ttf",
+      "sha1": "9dc1b55963909e5304ffcfd274392c1ff7500963"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-ExtraBold.ttf",
+      "sha1": "3944ce6f31436d8f6889c0c34d6e55843888699f"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-ExtraLight.ttf",
+      "sha1": "4c4b2717f6da40088ca513da041095a5f0337d4c"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-Light.ttf",
+      "sha1": "1e29b1f6ab1d063a4c0b2757bb980b5267957a00"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-Medium.ttf",
+      "sha1": "b873aca1850098b3d757ac7b858e3da4960b8913"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-Regular.ttf",
+      "sha1": "348e1e92a1d8af3d362ed81b28cc9df5244f699a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraCondensed/Inconsolata_ExtraCondensed-SemiBold.ttf",
+      "sha1": "e3a728b4903c12d6d8fd8606965e241e4c36f509"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-Black.ttf",
+      "sha1": "4cafe6c9899836906381a41d3ebdd67f99d04fe8"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-Bold.ttf",
+      "sha1": "e7332ec51ae8ded518821961552e6473aa23c0f5"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-ExtraBold.ttf",
+      "sha1": "b874d3f589ed04898b312512bea98d6cf7be49fc"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-ExtraLight.ttf",
+      "sha1": "c72c6d91152f2e044151979e42e9f746c3a293e6"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-Light.ttf",
+      "sha1": "97bcc2715aad62c854391172b2d900809b5a0ab6"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-Medium.ttf",
+      "sha1": "ef4167d844cea19c239f9466a5a0585e412faa06"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-Regular.ttf",
+      "sha1": "dc8639b8d2c5eafee6f362f94ad36e41bbbcd07a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_ExtraExpanded/Inconsolata_ExtraExpanded-SemiBold.ttf",
+      "sha1": "d59015cb1c8b3ca54267f3f2093c10e6aa1988b8"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-Black.ttf",
+      "sha1": "0e08b56d23dce4905a5d103c0f0ff637792c152e"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-Bold.ttf",
+      "sha1": "b6ce37be0fa4df206a04e0ced554299753516a28"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-ExtraBold.ttf",
+      "sha1": "09798c7c6acab0f2b454183ddf18dd3128972668"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-ExtraLight.ttf",
+      "sha1": "b4d823e81c4ceb205d21f94f05b5c32db0482f0d"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-Light.ttf",
+      "sha1": "9bbe771eac263401966a2ae7f03f2534b2ede16d"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-Medium.ttf",
+      "sha1": "bd21fda9417c4170230a2c9b04efb0ce1a78c1be"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-Regular.ttf",
+      "sha1": "2abd7c59f3645ef94c6cb80f3dde83fe501b4bb5"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiCondensed/Inconsolata_SemiCondensed-SemiBold.ttf",
+      "sha1": "790cf44da7087d65a19b73aa9f92ac6d6539107d"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-Black.ttf",
+      "sha1": "98cbfa96a8bb4430b992c2ba4dfcb91bb2e21be2"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-Bold.ttf",
+      "sha1": "58afd5172ada4aad3ef03f32937dbf17e723ddd8"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-ExtraBold.ttf",
+      "sha1": "067fd979373d177452f782be814cd9692ec5e9b7"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-ExtraLight.ttf",
+      "sha1": "8468b02615141cea0157f744e317a6035a964633"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-Light.ttf",
+      "sha1": "4158131e7946a2a5da7257e1753d23245adbcbda"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-Medium.ttf",
+      "sha1": "d051e4655f8135c9bce25e84508a180c60b9dc01"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-Regular.ttf",
+      "sha1": "af078da71d5a8f95eb811b460d65ffcd13654909"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_SemiExpanded/Inconsolata_SemiExpanded-SemiBold.ttf",
+      "sha1": "3e4017e05453b5c6d579769895151c9405d346fc"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-Black.ttf",
+      "sha1": "1668c11bc46ed6c7c9acc4c2b87f7ba891e5249e"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-Bold.ttf",
+      "sha1": "74285eb5326b6b1528b465d49bc8514c5b1aa157"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-ExtraBold.ttf",
+      "sha1": "5b0dcbe52f7911f1cb2ea4c1bfa59647659ede87"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-ExtraLight.ttf",
+      "sha1": "ae3df06cff50d27dfcdb70e0101d85087b2dfcbe"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-Light.ttf",
+      "sha1": "9952a1db32b94d2c5d1c376431c40e4f21d73835"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-Medium.ttf",
+      "sha1": "5d987ab728f7ef3822c747c95f9149791afef903"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-Regular.ttf",
+      "sha1": "8b35c57f6fad7001d25d362c5fdc447e0d656dcf"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraCondensed/Inconsolata_UltraCondensed-SemiBold.ttf",
+      "sha1": "6d1a9d17f8d018cfd5353b7352b91bdfa42a33b6"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-Black.ttf",
+      "sha1": "4fdfe24b583e2de6a2c2b4d1060c1552e4004e0f"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-Bold.ttf",
+      "sha1": "cafc13a84176cc45da3209ba00067c0bdd1686cd"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-ExtraBold.ttf",
+      "sha1": "6b6437da492a550de73de793b00bd7fe666a5026"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-ExtraLight.ttf",
+      "sha1": "ff90eca70aacbe1f4bf95d72c8eab18d8a8a5d5a"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-Light.ttf",
+      "sha1": "4f42c7cf6d13fb751f7ea4d234c1c1b642ff14b4"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-Medium.ttf",
+      "sha1": "11c141b4616f8bd9ef95a15027aa2ecbaba4cf72"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-Regular.ttf",
+      "sha1": "3d01c56ea43aac164dd991adfa24dd2778dd7bdc"
+    },
+    {
+      "path": "assets/fonts/static/Inconsolata_UltraExpanded/Inconsolata_UltraExpanded-SemiBold.ttf",
+      "sha1": "4468fc03eadf1293720ba59b2be3cf363404119a"
+    }
+  ]
+}
