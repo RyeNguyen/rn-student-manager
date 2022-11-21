@@ -1,16 +1,18 @@
 import React from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 import Colors from '../constants/Colors.constant';
 import Sizes from '../constants/Sizes.constant';
 import TextStyles from '../styles/Text.style';
 import LayoutStyles from '../styles/Layout.style';
 
-const StudentCard = ({data}) => {
+const StudentCard = ({data, handlePress}) => {
   const {id, name, age, email, avatar} = data;
 
   return (
-    <View style={[LayoutStyles.layoutShadow, styles.card]}>
+    <TouchableOpacity
+      onPress={handlePress}
+      style={[LayoutStyles.layoutShadow, styles.card]}>
       <View style={LayoutStyles.layoutStretch}>
         <View style={styles.info}>
           <View style={styles.infoItem}>
@@ -74,7 +76,7 @@ const StudentCard = ({data}) => {
           </Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

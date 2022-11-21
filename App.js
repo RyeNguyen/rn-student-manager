@@ -8,7 +8,7 @@ import {store} from './src/app/store';
 import HomeScreen from './src/screens/HomeScreen';
 import StudentListScreen from './src/screens/StudentListScreen';
 import SubjectListScreen from './src/screens/SubjectListScreen';
-import AddStudentScreen from './src/screens/AddStudentScreen';
+import StudentFormScreen from './src/screens/StudentFormScreen';
 import AddSubjectScreen from './src/screens/AddSubjectScreen';
 import StudentInfoScreen from './src/screens/StudentInfoScreen';
 import SubjectInfoScreen from './src/screens/SubjectInfoScreen';
@@ -46,7 +46,7 @@ const App = () => {
             headerShown: false,
           }}>
           <Stack.Screen name="MainTab" component={MainTabs} />
-          <Stack.Screen name="AddStudent" component={AddStudentScreen} />
+          <Stack.Screen name="AddStudent" component={StudentFormScreen} />
           <Stack.Screen name="AddSubject" component={AddSubjectScreen} />
           <Stack.Screen name="StudentInfo" component={StudentInfoScreen} />
           <Stack.Screen name="SubjectInfo" component={SubjectInfoScreen} />

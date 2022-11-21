@@ -1,34 +1,25 @@
-import axios from 'axios';
-
-const instance = axios.create({
-  baseURL: 'https://6378ee427419b414df8669dd.mockapi.io/api/v1',
-});
+import {instance} from './instance';
 
 export const fetchPaginatedStudentsAPI = async (page = 1, limit = 10) => {
   return await instance
-    .get(`/students?page=${page}&limit=${limit}&sortBy=createdAt&order=desc`)
+    .get(`/students?page=${page}&limit=${limit}`)
     .then(response => response.data);
 };
 
-export const fetStudentById = async studentId => {
-  await instance
-    .get(`/students/:id=${studentId}`)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error));
+export const fetchStudentByIdAPI = async studentId => {
+  await instance.get(`/students/${studentId}`).then(response => response.data);
 };
 
-export const addStudent = async newData => {
-  await instance
+export const addStudentAPI = async newData => {
+  return await instance
     .post('/students', newData)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error));
+    .then(response => response.data);
 };
 
-export const updateStudent = async newData => {
+export const updateStudentAPI = async (userId, newData) => {
   await instance
-    .put(`/students:id=${newData.id}`, newData)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error));
+    .patch(`/students/${userId}`, newData)
+    .then(response => response.data);
 };
 
 export const deleteStudent = async studentId => {

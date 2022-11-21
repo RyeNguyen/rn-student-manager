@@ -6,12 +6,23 @@ import TextStyles from '../styles/Text.style';
 import Sizes from '../constants/Sizes.constant';
 import Colors from '../constants/Colors.constant';
 
-const Button = ({text, handlePress}) => {
+const Button = ({text, handlePress, isPrimary = true}) => {
   return (
     <TouchableOpacity
-      style={[styles.button, LayoutStyles.layoutCenter]}
+      style={[
+        styles.button,
+        !isPrimary ? styles.buttonInactive : null,
+        LayoutStyles.layoutCenter,
+      ]}
       onPress={handlePress}>
-      <Text style={[TextStyles.textMain, TextStyles.textDark]}>{text}</Text>
+      <Text
+        style={[
+          TextStyles.textMain,
+          TextStyles.textDark,
+          !isPrimary ? styles.buttonTextInactive : null,
+        ]}>
+        {text}
+      </Text>
     </TouchableOpacity>
   );
 };
@@ -22,6 +33,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: Sizes.medium,
     borderRadius: Sizes.mediumLarge,
     backgroundColor: Colors.tertiary,
+  },
+  buttonInactive: {
+    backgroundColor: 'transparent',
+  },
+  buttonTextInactive: {
+    color: Colors.tertiary,
   },
 });
 

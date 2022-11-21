@@ -31,7 +31,7 @@ module.exports = StyleSheet.create({
   },
   textSmall: {
     fontFamily: 'Inconsolata-Regular',
-    fontSize: Sizes.small,
+    fontSize: Sizes.mediumSmall,
     color: Colors.white,
   },
   textBold: {

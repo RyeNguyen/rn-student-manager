@@ -4,7 +4,6 @@ import {
   Text,
   View,
   StyleSheet,
-  TouchableOpacity,
   ActivityIndicator,
 } from 'react-native';
 
@@ -36,7 +35,12 @@ const StudentListScreen = ({navigation}) => {
   }, [currentLimit, currentPage, dispatch]);
 
   const renderCard = ({item}) => {
-    return <StudentCard data={item} />;
+    return (
+      <StudentCard
+        data={item}
+        handlePress={() => navigation.navigate('AddStudent', {data: item})}
+      />
+    );
   };
 
   const renderMore = () => {
@@ -45,6 +49,7 @@ const StudentListScreen = ({navigation}) => {
 
   const refreshList = () => {
     dispatch(refresh());
+    dispatch(fetchPaginatedStudents({currentPage: 1, currentLimit}));
   };
 
   return (
@@ -54,7 +59,7 @@ const StudentListScreen = ({navigation}) => {
 
         <Button
           text="Add Student"
-          handlePress={() => navigation.navigate('AddStudent')}
+          handlePress={() => navigation.navigate('AddStudent', {data: null})}
         />
       </View>
 
@@ -93,12 +98,6 @@ const styles = StyleSheet.create({
   header: {
     paddingVertical: Sizes.hugerH,
     paddingHorizontal: Sizes.huge,
-  },
-  button: {
-    paddingVertical: Sizes.smallerH,
-    paddingHorizontal: Sizes.medium,
-    borderRadius: Sizes.mediumLarge,
-    backgroundColor: Colors.tertiary,
   },
   loader: {
     width: '100%',
