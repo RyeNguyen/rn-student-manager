@@ -21,10 +21,3 @@ export const updateStudentAPI = async (userId, newData) => {
     .patch(`/students/${userId}`, newData)
     .then(response => response.data);
 };
-
-export const deleteStudent = async studentId => {
-  await instance
-    .delete(`/students:id=${studentId}`)
-    .then(response => console.log(response.data))
-    .catch(error => console.log(error));
-};

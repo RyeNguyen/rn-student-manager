@@ -6,7 +6,6 @@ import {
   Image,
   TouchableOpacity,
   ScrollView,
-  FlatList,
   SafeAreaView,
 } from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
@@ -23,6 +22,7 @@ import {
   removeSubject,
   fetchSubjectsForStudent,
   resetSubjects,
+  updateSubject,
 } from '../features/student/subjectSlice';
 import {addStudent, updateStudent} from '../features/student/studentSlice';
 
@@ -145,6 +145,7 @@ const StudentFormScreen = ({navigation, route}) => {
           subjects: registeredSubjects,
         };
         dispatch(addStudent(newStudent));
+        navigation.navigate('StudentList');
       } else {
         dispatch(
           updateStudent({
@@ -152,18 +153,20 @@ const StudentFormScreen = ({navigation, route}) => {
             name: name,
             email: email,
             age: parseInt(age, 10),
-            avatar: mapAvatar(),
+            avatar: mapAvatar(true),
             subjects: registeredSubjects,
           }),
         );
       }
-      navigation.navigate('StudentList');
+      registeredSubjects.forEach(sub => {
+        dispatch(updateSubject([sub, data.id]));
+      });
     }
   };
 
-  const mapAvatar = () => {
+  const mapAvatar = (submit = false) => {
     for (let i = 0; i < AvatarList.length; i++) {
-      if (!data && AvatarList[i].id === currentAvatar) {
+      if (submit && AvatarList[i].id === currentAvatar) {
         return AvatarList[i].url;
       } else if (data && AvatarList[i].url === data.avatar) {
         setCurrentAvatar(AvatarList[i].id);

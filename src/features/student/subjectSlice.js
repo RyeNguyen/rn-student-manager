@@ -1,5 +1,9 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-import {fetchAllSubjectsAPI} from '../../api/subjectAPI';
+import {
+  fetchAllSubjectsAPI,
+  addNewSubjectAPI,
+  updateSubjectAPI,
+} from '../../api/subjectAPI';
 
 export const fetchAllSubjects = createAsyncThunk(
   'Subject/fetchAllSubjects',
@@ -9,7 +13,7 @@ export const fetchAllSubjects = createAsyncThunk(
 );
 
 export const fetchSubjectsForStudent = createAsyncThunk(
-  '/Subject/fetchSubjectsForStudent',
+  'Subject/fetchSubjectsForStudent',
   async (studentSubjects, thunkApi) => {
     const studentSubjectsIds = studentSubjects.map(sub => sub.id);
     const all = await fetchAllSubjectsAPI();
@@ -20,9 +24,26 @@ export const fetchSubjectsForStudent = createAsyncThunk(
   },
 );
 
+export const addNewSubject = createAsyncThunk(
+  'Subject/addNewSubject',
+  async (newSubject, thunkApi) => {
+    return await addNewSubjectAPI(newSubject);
+  },
+);
+
+export const updateSubject = createAsyncThunk(
+  'Subject/updateSubject',
+  async ([subjectToUpdate, studentId], thunkApi) => {
+    return await updateSubjectAPI(subjectToUpdate.id, {
+      ...subjectToUpdate,
+      students: [...subjectToUpdate.students, studentId],
+    });
+  },
+);
+
 const initialState = {
   subjects: [],
-  isLoading: false,
+  isRefreshing: false,
   errorMsg: '',
   registeredSubjects: [],
   unregisteredSubjects: [],
@@ -52,10 +73,10 @@ const subjectSlice = createSlice({
   extraReducers: builder => {
     builder
       .addCase(fetchAllSubjects.pending, (state, action) => {
-        state.isLoading = true;
+        state.isRefreshing = true;
       })
       .addCase(fetchAllSubjects.fulfilled, (state, action) => {
-        state.isLoading = false;
+        state.isRefreshing = false;
         state.subjects = action.payload;
         state.unregisteredSubjects = action.payload;
       })
@@ -66,8 +87,23 @@ const subjectSlice = createSlice({
       .addCase(fetchSubjectsForStudent.fulfilled, (state, action) => {
         state.registeredSubjects = action.payload.reg;
         state.unregisteredSubjects = action.payload.unreg;
+        console.log(
+          'User subjects from slice',
+          action.payload.reg,
+          action.payload.unreg,
+        );
       })
       .addCase(fetchSubjectsForStudent.rejected, (state, action) => {
+        state.errorMsg = action.error.message;
+      });
+    builder
+      .addCase(addNewSubject.pending, (state, action) => {
+        state.isRefreshing = true;
+      })
+      .addCase(addNewSubject.fulfilled, (state, action) => {
+        state.isRefreshing = false;
+      })
+      .addCase(addNewSubject.rejected, (state, action) => {
         state.errorMsg = action.error.message;
       });
   },

@@ -21,7 +21,6 @@ const InputField = ({
         placeholder={placeholder}
         placeholderTextColor="rgba(255, 255, 255, 0.5)"
         style={styles.input}
-        autoCapitalize="words"
         autoCorrect={false}
         defaultValue={value}
         cursorColor={Colors.white}

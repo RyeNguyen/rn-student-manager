@@ -54,11 +54,11 @@ const studentSlice = createSlice({
       state.currentPage++;
     },
     refresh(state) {
-      //if (state.currentPage !== 1) {
-      state.isRefreshing = true;
-      state.students = [];
-      //state.currentPage = 1;
-      //}
+      if (state.currentPage !== 1) {
+        state.isRefreshing = true;
+        state.students = [];
+        state.currentPage = 1;
+      }
     },
   },
   extraReducers: builder => {

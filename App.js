@@ -9,7 +9,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import StudentListScreen from './src/screens/StudentListScreen';
 import SubjectListScreen from './src/screens/SubjectListScreen';
 import StudentFormScreen from './src/screens/StudentFormScreen';
-import AddSubjectScreen from './src/screens/AddSubjectScreen';
+import SubjectFormScreen from './src/screens/SubjectFormScreen';
 import StudentInfoScreen from './src/screens/StudentInfoScreen';
 import SubjectInfoScreen from './src/screens/SubjectInfoScreen';
 
@@ -47,7 +47,7 @@ const App = () => {
           }}>
           <Stack.Screen name="MainTab" component={MainTabs} />
           <Stack.Screen name="AddStudent" component={StudentFormScreen} />
-          <Stack.Screen name="AddSubject" component={AddSubjectScreen} />
+          <Stack.Screen name="AddSubject" component={SubjectFormScreen} />
           <Stack.Screen name="StudentInfo" component={StudentInfoScreen} />
           <Stack.Screen name="SubjectInfo" component={SubjectInfoScreen} />
         </Stack.Navigator>

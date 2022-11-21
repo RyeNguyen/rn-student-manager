@@ -49,7 +49,7 @@ const StudentListScreen = ({navigation}) => {
 
   const refreshList = () => {
     dispatch(refresh());
-    dispatch(fetchPaginatedStudents({currentPage: 1, currentLimit}));
+    // dispatch(fetchPaginatedStudents({currentPage: 1, currentLimit}));
   };
 
   return (
